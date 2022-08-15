@@ -11,6 +11,9 @@ import StickyFooter from '../src/components/StickyFooter';
 import Search from '../src/components/Search';
 import Muiv5 from '../src/components/Muiv5';
 import Autosearch from '../src/components/Autosearch';
+import SearchQuery from '../src/components/SearchQuery';
+import GetData from '../src/components/GetData';
+import GetAxiosData from '../src/components/GetAxiosData';
 
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -31,7 +34,10 @@ export default function MyApp(props) {
         {/* <SignUp /> */}
         {/* <Search /> */}
         {/* <Muiv5/> */}
-        <Autosearch/>
+        {/* <Autosearch/> */}
+        {/* <SearchQuery/> */}
+        {/* <GetData/> */}
+        <GetAxiosData/>
         <StickyFooter/>
       </ThemeProvider>
     </CacheProvider>
