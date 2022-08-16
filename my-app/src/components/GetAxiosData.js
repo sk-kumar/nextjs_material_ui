@@ -10,8 +10,8 @@ function GetAxiosData() {
             try {
                 const result = await axios.get(`http://localhost:8000/data`)
                 // console.log(result);
-                console.log(result.data);
-                setData(result.data)
+                console.log(result.data.dataDetails);
+                setData(result.data.dataDetails)
             } catch (error) {
                 console.log(error);
             }
@@ -21,7 +21,6 @@ function GetAxiosData() {
     
   return (
       <div>
-          {/* {data.map((item) => <p>{item.question}</p>)} */}
           <table>
               <thead>
                   <tr>

@@ -14,6 +14,7 @@ import Autosearch from '../src/components/Autosearch';
 import SearchQuery from '../src/components/SearchQuery';
 import GetData from '../src/components/GetData';
 import GetAxiosData from '../src/components/GetAxiosData';
+import SearchAxios from '../src/components/SearchAxios';
 
 
 // Client-side cache, shared for the whole session of the user in the browser.
@@ -37,7 +38,8 @@ export default function MyApp(props) {
         {/* <Autosearch/> */}
         {/* <SearchQuery/> */}
         {/* <GetData/> */}
-        <GetAxiosData/>
+        {/* <GetAxiosData /> */}
+        <SearchAxios/>
         <StickyFooter/>
       </ThemeProvider>
     </CacheProvider>
